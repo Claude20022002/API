@@ -6,7 +6,8 @@ const planteInterieureRouter = require("./routes/plante_interieur");
 const app = express();
 app.use(cors());
 
-app.get("/plantes/interieures", (req, res) => {});
+app.use("/plantes", planteExterieureRouter);
+app.use("/plantes", planteInterieureRouter);
 
 app.listen(3000, () => {
     console.log("Server is running on port 3000");

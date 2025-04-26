@@ -1,0 +1,25 @@
+{
+  "name": "gardenapi",
+  "version": "1.0.0",
+  "description": "C'est une petite API avec quelque donnée de plantes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Claude20022002/gardenAPI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Claude20022002/gardenAPI/issues"
+  },
+  "homepage": "https://github.com/Claude20022002/gardenAPI#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}

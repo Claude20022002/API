@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Claude20022002/gardenAPI#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^5.1.0",
     "nodemon": "^3.1.10"
   }

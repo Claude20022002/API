@@ -1,4 +1,4 @@
-const Faqplant = [
+const faqPlant = [
     {
         id: 11,
         question: "Do shade growing plants need any Sunlight?",
@@ -7469,4 +7469,5 @@ const Faqplant = [
         },
     },
 ];
-module.exports = Faqplant;
+
+module.exports = faqPlant;

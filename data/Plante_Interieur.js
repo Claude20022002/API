@@ -1,4 +1,4 @@
-const PlanteInt = [
+const plantInterieur = [
     {
         id: 1,
         nom: "Monstera Deliciosa",
@@ -375,4 +375,3 @@ const PlanteInt = [
         ensoleillement: "Plein soleil",
     },
 ];
-module.exports = PlanteInt;

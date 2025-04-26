@@ -1,4 +1,4 @@
-const Infoplant = [
+const infoPlante = [
     {
         id: 1,
         common_name: "European Silver Fir",
@@ -10617,4 +10617,5 @@ const Infoplant = [
         },
     },
 ];
-module.exports = Infoplant;
+
+module.exports = infoPlante;

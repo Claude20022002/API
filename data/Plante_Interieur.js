@@ -375,4 +375,4 @@ const PlanteInt = [
         ensoleillement: "Plein soleil",
     },
 ];
-export default PlanteInt;
+module.exports = PlanteInt;

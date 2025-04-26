@@ -1,10 +1,11 @@
 const express = require("express");
 const cors = require("cors");
+const planteExterieureRouter = require("./routes/plante_exterieur");
+const planteInterieureRouter = require("./routes/plante_interieur");
 
 const app = express();
 app.use(cors());
 
-app.get("/plantes/exterieures", (req, res) => {});
 app.get("/plantes/interieures", (req, res) => {});
 
 app.listen(3000, () => {

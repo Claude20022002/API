@@ -2,7 +2,7 @@
 
 C'est une petite API avec quelque donnée de plantes
 
-# Routes et gestion des plantes extérieures :
+## Routes et gestion des plantes extérieures :
 
 GET /plantes/exterieures/all : Renvoie toutes les plantes extérieures.
 
@@ -12,7 +12,7 @@ GET /plantes/exterieures/name/:name : Renvoie une plante extérieure spécifique
 
 GET /plantes/exterieures/scientific/:name : Renvoie une plante extérieure spécifique en fonction de son nom scientifique.
 
-# Routes et gestion des plantes d’intérieur :
+## Routes et gestion des plantes d’intérieur :
 
 GET /plantes/interieur/all : Renvoie toutes les plantes d’intérieur.
 
@@ -22,7 +22,7 @@ GET /plantes/interieur/name/:name : Renvoie une plante d’intérieur spécifiqu
 
 GET /plantes/interieur/scientific/:name : Renvoie une plante d’intérieur spécifique en fonction de son nom scientifique.
 
-# Routes et gestion des FAQ (Foire aux questions) :
+## Routes et gestion des FAQ (Foire aux questions) :
 
 GET /faq/all : Renvoie toutes les questions et réponses de la FAQ.
 
@@ -39,5 +39,7 @@ DELETE /faq/delete/:id : Supprime une question et une réponse spécifiques de l
 POST /faq/answer/add : Ajoute une nouvelle réponse uniquement à la FAQ.
 
 PUT /faq/answer/update/:id : Met à jour une réponse spécifique dans la FAQ.
+
+### Descrption sur l'api
 
 Chaque route est donc conçue pour effectuer des opérations CRUD (Créer, Lire, Mettre à jour, Supprimer) sur les données des plantes ou des FAQ. Les routes de type GET permettent d'obtenir des informations, tandis que celles de type POST, PUT et DELETE permettent de créer, modifier ou supprimer des éléments respectivement.

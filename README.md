@@ -20,7 +20,7 @@ CRUD pour les FAQ : Les utilisateurs peuvent ajouter de nouvelles questions et r
 
 ## Routes CRUD :
 
-## <span style="color: green">Gestion des plantes :</span>
+### <span style="color: green">Gestion des plantes :</span>
 
 -   GET /plantes/exterieures/all : Renvoie toutes les plantes extérieures.
 
@@ -36,7 +36,7 @@ CRUD pour les FAQ : Les utilisateurs peuvent ajouter de nouvelles questions et r
 
 -   GET /plantes/interieur/name/:name : Recherche une plante d'intérieur par nom commun.
 
-## Gestion des FAQ :
+### Gestion des FAQ :
 
 -   GET /faq/all : Renvoie toutes les questions et réponses de la FAQ.
 
@@ -58,8 +58,8 @@ CRUD pour les FAQ : Les utilisateurs peuvent ajouter de nouvelles questions et r
 
 **_Express.js :_** Framework pour la gestion des routes et des requêtes HTTP.
 
-Node.js : Environnement d'exécution JavaScript côté serveur.
+**_Node.js :_** Environnement d'exécution JavaScript côté serveur.
 
-Data en mémoire : Les données sont stockées en mémoire pour simplifier le développement, mais elles peuvent être adaptées pour une base de données à long terme.
+**_Data en mémoire :_** Les données sont stockées en mémoire pour simplifier le développement, mais elles peuvent être adaptées pour une base de données à long terme.
 
-Route RESTful : Utilisation de bonnes pratiques REST pour la gestion des données.
+**_Route RESTful :_** Utilisation de bonnes pratiques REST pour la gestion des données.

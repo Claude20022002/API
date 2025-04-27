@@ -1,45 +1,65 @@
 # gardenAPI
 
-C'est une petite API avec quelque donnée de plantes
+## Description du projet
 
-## Routes et gestion des plantes extérieures :
+Le projet `GardenAPI` est une API RESTful conçue pour gérer une base de données de plantes d’intérieur et d’extérieur ainsi qu’une section FAQ (Foire aux Questions). Cette API permet aux utilisateurs de consulter, ajouter, modifier ou supprimer des informations sur les plantes et les questions/réponses fréquemment posées.
 
-GET /plantes/exterieures/all : Renvoie toutes les plantes extérieures.
+## Principales fonctionnalités :
 
-GET /plantes/exterieures/:id : Renvoie une plante extérieure spécifique en fonction de son ID.
+Gestion des plantes :
+Plantes extérieures et intérieures : Le projet permet de gérer des informations sur diverses plantes, incluant des données comme le nom scientifique, le nom commun, le cycle de vie, les besoins en lumière et en eau, et une image par défaut.
 
-GET /plantes/exterieures/name/:name : Renvoie une plante extérieure spécifique en fonction de son nom commun.
+Recherche par nom : Il est possible de rechercher des plantes par leur nom scientifique ou leur nom commun, offrant ainsi une flexibilité dans l'utilisation de l'API.
 
-GET /plantes/exterieures/scientific/:name : Renvoie une plante extérieure spécifique en fonction de son nom scientifique.
+Consultation des plantes : Les utilisateurs peuvent obtenir une liste de toutes les plantes extérieures ou intérieures, ainsi que des informations détaillées sur une plante spécifique.
 
-## Routes et gestion des plantes d’intérieur :
+Gestion des FAQ :
+Questions et réponses : Le projet inclut une section FAQ permettant de répondre aux interrogations courantes concernant les plantes. Chaque entrée dans la FAQ comprend une question, une réponse et éventuellement des images explicatives.
 
-GET /plantes/interieur/all : Renvoie toutes les plantes d’intérieur.
+CRUD pour les FAQ : Les utilisateurs peuvent ajouter de nouvelles questions et réponses, mettre à jour les réponses existantes, ou supprimer des entrées. Il est aussi possible de consulter toutes les questions, ou uniquement les réponses.
 
-GET /plantes/interieur/:id : Renvoie une plante d’intérieur spécifique en fonction de son ID.
+## Routes CRUD :
 
-GET /plantes/interieur/name/:name : Renvoie une plante d’intérieur spécifique en fonction de son nom commun.
+## <span style="color: green">Gestion des plantes :</span>
 
-GET /plantes/interieur/scientific/:name : Renvoie une plante d’intérieur spécifique en fonction de son nom scientifique.
+-   GET /plantes/exterieures/all : Renvoie toutes les plantes extérieures.
 
-## Routes et gestion des FAQ (Foire aux questions) :
+-   GET /plantes/exterieures/:id : Renvoie les informations d'une plante extérieure spécifique par ID.
 
-GET /faq/all : Renvoie toutes les questions et réponses de la FAQ.
+-   GET /plantes/exterieures/name/:name : Recherche une plante extérieure par nom commun.
 
-GET /faq/question : Renvoie toutes les questions de la FAQ.
+-   GET /plantes/exterieures/scientific/:name : Recherche une plante extérieure par nom scientifique.
 
-GET /faq/answer : Renvoie toutes les réponses de la FAQ.
+-   GET /plantes/interieur/all : Renvoie toutes les plantes d'intérieur.
 
-POST /faq/add : Ajoute une nouvelle question et une nouvelle réponse à la FAQ.
+-   GET /plantes/interieur/:id : Renvoie les informations d'une plante d'intérieur spécifique par ID.
 
-PUT /faq/update/:id : Met à jour une question et une réponse spécifiques dans la FAQ.
+-   GET /plantes/interieur/name/:name : Recherche une plante d'intérieur par nom commun.
 
-DELETE /faq/delete/:id : Supprime une question et une réponse spécifiques de la FAQ.
+## Gestion des FAQ :
 
-POST /faq/answer/add : Ajoute une nouvelle réponse uniquement à la FAQ.
+-   GET /faq/all : Renvoie toutes les questions et réponses de la FAQ.
 
-PUT /faq/answer/update/:id : Met à jour une réponse spécifique dans la FAQ.
+-   GET /faq/question : Renvoie toutes les questions de la FAQ.
 
-### Descrption sur l'api
+-   GET /faq/answer : Renvoie toutes les réponses de la FAQ.
 
-Chaque route est donc conçue pour effectuer des opérations CRUD (Créer, Lire, Mettre à jour, Supprimer) sur les données des plantes ou des FAQ. Les routes de type GET permettent d'obtenir des informations, tandis que celles de type POST, PUT et DELETE permettent de créer, modifier ou supprimer des éléments respectivement.
+-   POST /faq/add : Ajoute une nouvelle question et réponse à la FAQ.
+
+-   PUT /faq/update/:id : Met à jour une question et une réponse spécifiques de la FAQ.
+
+-   DELETE /faq/delete/:id : Supprime une question et une réponse spécifiques de la FAQ.
+
+-   POST /faq/answer/add : Ajoute une nouvelle réponse à la FAQ.
+
+-   PUT /faq/answer/update/:id : Met à jour une réponse spécifique de la FAQ.
+
+## Technologies utilisées :
+
+**_Express.js :_** Framework pour la gestion des routes et des requêtes HTTP.
+
+Node.js : Environnement d'exécution JavaScript côté serveur.
+
+Data en mémoire : Les données sont stockées en mémoire pour simplifier le développement, mais elles peuvent être adaptées pour une base de données à long terme.
+
+Route RESTful : Utilisation de bonnes pratiques REST pour la gestion des données.

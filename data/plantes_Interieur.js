@@ -375,3 +375,5 @@ const plantInterieur = [
         ensoleillement: "Plein soleil",
     },
 ];
+
+module.exports = plantInterieur;

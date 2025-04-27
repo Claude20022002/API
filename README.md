@@ -2,7 +2,8 @@
 
 C'est une petite API avec quelque donnée de plantes
 
-#Routes et gestion des plantes extérieures :
+# Routes et gestion des plantes extérieures :
+
 GET /plantes/exterieures/all : Renvoie toutes les plantes extérieures.
 
 GET /plantes/exterieures/:id : Renvoie une plante extérieure spécifique en fonction de son ID.
@@ -11,7 +12,8 @@ GET /plantes/exterieures/name/:name : Renvoie une plante extérieure spécifique
 
 GET /plantes/exterieures/scientific/:name : Renvoie une plante extérieure spécifique en fonction de son nom scientifique.
 
-#Routes et gestion des plantes d’intérieur :
+# Routes et gestion des plantes d’intérieur :
+
 GET /plantes/interieur/all : Renvoie toutes les plantes d’intérieur.
 
 GET /plantes/interieur/:id : Renvoie une plante d’intérieur spécifique en fonction de son ID.
@@ -20,7 +22,8 @@ GET /plantes/interieur/name/:name : Renvoie une plante d’intérieur spécifiqu
 
 GET /plantes/interieur/scientific/:name : Renvoie une plante d’intérieur spécifique en fonction de son nom scientifique.
 
-#Routes et gestion des FAQ (Foire aux questions) :
+# Routes et gestion des FAQ (Foire aux questions) :
+
 GET /faq/all : Renvoie toutes les questions et réponses de la FAQ.
 
 GET /faq/question : Renvoie toutes les questions de la FAQ.
